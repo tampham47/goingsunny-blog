@@ -20,7 +20,8 @@
     "demo": "gulp production && gulp server",
     "test": "gulp production && karma start --single-run",
     "test:watch": "karma start",
-    "test:gulp": "mocha ./gulpfile.js/**/*.test.js"
+    "test:gulp": "mocha ./gulpfile.js/**/*.test.js",
+    "deploy_prod": "ssh -i _deploy/goingsunny.pem centos@52.221.229.162 'cd prod/goingsunny.blog && git checkout master && git fetch && git checkout gh-pages'"
   },
   "devDependencies": {
     "babel-core": "6.7.2",
