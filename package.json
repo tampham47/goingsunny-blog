@@ -22,7 +22,7 @@
     "test:watch": "karma start",
     "test:gulp": "mocha ./gulpfile.js/**/*.test.js",
     "togoingsunny": "ssh -i _deploy/goingsunny.pem centos@52.221.229.162",
-    "deploy_prod": "ssh -t -i _deploy/goingsunny.pem centos@52.221.229.162 'cd /usr/share/goingsunny/blog/ && sudo git checkout master && sudo git fetch && sudo git checkout gh-pages'"
+    "deploy_prod": "ssh -t -i _deploy/goingsunny.pem centos@52.221.229.162 'cd /usr/share/goingsunny/blog/ && sudo git checkout master && sudo git pull && sudo git checkout gh-pages'"
   },
   "devDependencies": {
     "babel-core": "6.7.2",
